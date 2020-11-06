@@ -11,7 +11,7 @@ const initialState = {
   values: [0, 0],
   current: 0,
 };
-
+  
 export default class App extends Component {
   state = { ...initialState };
 

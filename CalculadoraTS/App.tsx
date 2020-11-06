@@ -1,13 +1,13 @@
 import React from 'react';
 import { View} from 'react-native';
-import Display from './src/components/Display/Display';
+import Content from './src/components/Tela/Content';
 
 const App: React.FC = () => {
   return (
     <>
-      <View>
-        <Display />
-      </View>
+
+        <Content />
+
     </>
   );
 };
