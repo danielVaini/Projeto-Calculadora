@@ -20,7 +20,7 @@ if (props.triple){buttonStyles.push(styles.buttonTriple);}
 
   return (
     <>
-      <TouchableHighlight style={buttonStyles} onPress={() => props.onClick(props.label)} >
+      <TouchableHighlight style={buttonStyles} onPress={props.onClick} >
         <Text style={styles.textButton} >{props.label}</Text>
       </TouchableHighlight>
     </>
@@ -33,7 +33,7 @@ const styles = StyleSheet.create({
     height: Dimensions.get('window').width / 4,
     width: Dimensions.get('window').width / 4,
     padding: 20,
-    backgroundColor: 'grey',
+    backgroundColor: '#27c2dd',
     justifyContent: 'center',
     alignItems: 'center',
     borderWidth: 1,

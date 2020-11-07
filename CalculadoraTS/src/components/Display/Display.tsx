@@ -22,12 +22,12 @@ const styles = StyleSheet.create({
     flex: 1,
     padding: 20,
     justifyContent: 'center',
-    backgroundColor: '#000f',
+    backgroundColor: '#ffffff',
     alignItems: 'flex-end',
 
   },
   displayValue: {
     fontSize: 60,
-    color: '#fff',
+    color: 'black',
   },
 });

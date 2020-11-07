@@ -5,9 +5,7 @@ import Content from './src/components/Tela/Content';
 const App: React.FC = () => {
   return (
     <>
-
-        <Content />
-
+      <Content />
     </>
   );
 };
