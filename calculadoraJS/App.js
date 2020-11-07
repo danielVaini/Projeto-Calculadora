@@ -11,13 +11,11 @@ const initialState = {
   values: [0, 0],
   current: 0,
 };
-  
+
 export default class App extends Component {
   state = { ...initialState };
 
   addDigit = (n) => {
-    console.debug(typeof this.state.displayValue);
-
     const clearDisplay =
       this.state.displayValue === '0' || this.state.clearDisplay;
 
