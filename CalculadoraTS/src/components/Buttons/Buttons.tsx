@@ -1,10 +1,11 @@
-import React, { ButtonHTMLAttributes, useState } from 'react';
-import {Button, Dimensions, StyleSheet, Text, TouchableHighlight} from 'react-native';
+import React, { ButtonHTMLAttributes } from 'react';
+import { Dimensions, StyleSheet, Text, TouchableHighlight} from 'react-native';
 
 interface Props extends ButtonHTMLAttributes<HTMLButtonElement>  {
   label: string;
   double?: string;
   triple?: string;
+  operation?: string;
 
 }
 
@@ -14,6 +15,7 @@ const buttonStyles = [styles.buttonsContainer];
 
 if (props.double){buttonStyles.push(styles.buttonDouble);}
 if (props.triple){buttonStyles.push(styles.buttonTriple);}
+if (props.operation){buttonStyles.push(styles.operation);}
 
 
 
@@ -50,6 +52,9 @@ const styles = StyleSheet.create({
   textButton: {
     fontSize: 40,
   },
+  operation: {
+    backgroundColor: '#2767dd'
+  }
 });
 
 

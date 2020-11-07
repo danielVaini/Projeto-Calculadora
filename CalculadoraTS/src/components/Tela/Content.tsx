@@ -53,22 +53,22 @@ export default () => {
         <Buttons  label="AC" onClick={clearDisplay}/>
         <Buttons  label="(" onClick={() => addDigit('(')}/>
         <Buttons  label=")" onClick={() => addDigit(')')}/>
-        <Buttons label="/" onClick={() => addDigit('/')} />
+        <Buttons operation label="/" onClick={() => addDigit('/')} />
         <Buttons label="7" onClick={() => addDigit('7')}/>
         <Buttons label="8" onClick={() => addDigit('8')}/>
         <Buttons label="9"onClick={() => addDigit('9')} />
-        <Buttons label="*" onClick={() => addDigit('*')}/>
+        <Buttons operation label="*" onClick={() => addDigit('*')}/>
         <Buttons label="4"onClick={() => addDigit('4')} />
         <Buttons label="5" onClick={() => addDigit('5')} />
         <Buttons label="6" onClick={() => addDigit('6')} />
-        <Buttons label="+"  onClick={() => addDigit('+')}/>
+        <Buttons operation label="+"  onClick={() => addDigit('+')}/>
         <Buttons label="1" onClick={() => addDigit('1')} />
         <Buttons label="2" onClick={() => addDigit('2')} />
         <Buttons label="3" onClick={() => addDigit('3')}/>
-        <Buttons label="-" onClick={() => addDigit('-')}/>
+        <Buttons operation label="-" onClick={() => addDigit('-')}/>
         <Buttons double label="0" onClick={() => addDigit('0')} />
         <Buttons label="."  onClick={() => addDigit('.')} />
-        <Buttons label="=" onClick={() => operations('=')}/>
+        <Buttons operation label="=" onClick={() => operations('=')}/>
       </View>
     </View>
   );
